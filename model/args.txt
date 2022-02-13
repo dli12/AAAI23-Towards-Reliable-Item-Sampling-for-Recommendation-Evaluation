@@ -1,0 +1,45 @@
+-----------Hyperparameters-----------------
+
+pinterest-20-------
+itemKNN: 1250
+EASE: 1500
+ALS: 45 (delay = 0.01, default)
+
+yelp------
+itemKNN: 350
+EASE: 500
+ALS: 75 (delay = 0.01, default)
+
+ml-20m-----
+itemKNN: 150
+EASE: 3000
+ALS: 95 (delay = 100)
+
+
+
+-------------Validation Results-----------
+Recall@10
+
+pinterest-20----
+
+itemKNN: 0.567
+EASE: 0.57
+NeuMF: 0.516
+MultiVAE: 0.578
+ALS: 0.534
+
+yelp-----
+
+itemKNN: 0.421
+EASE: 0.389
+NeuMF: 0.353
+MultiVAE: 0.404
+ALS: 0.338
+
+ml-20m-----
+itemKNN: 0.744
+EASE: 0.821
+NeuMF: 0.81
+MultiVAE: 0.838
+ALS: 0.779
+
