@@ -6,8 +6,10 @@
 @inproceedings{dong@2023aaai,
   title={Towards Reliable Item Sampling for Recommendation Evaluation},
   author={Dong Li,Ruoming Jin, Zhenming Liu, Bin Ren, Jing Gao, Zhi Liu},
-  booktitle={Proceedings of AAAI},
-  year={2023},
+  booktitle={Thirty-Seventh {AAAI} Conference on Artificial Intelligence, {AAAI}
+               2023}
+  publisher = {{AAAI} Press},
+  year      = {2023},
 }
 ```
 
