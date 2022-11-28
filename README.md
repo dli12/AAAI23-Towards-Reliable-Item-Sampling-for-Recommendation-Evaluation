@@ -1,6 +1,15 @@
 
 
-# AAAI-2023-Anonymous-Code
+# AAAI-2023-Code
+
+```
+@inproceedings{dong@2023aaai,
+  title={Towards Reliable Item Sampling for Recommendation Evaluation},
+  author={Dong Li,Ruoming Jin, Zhenming Liu, Bin Ren, Jing Gao, Zhi Liu},
+  booktitle={Proceedings of AAAI},
+  year={2023},
+}
+```
 
 ### 1. Data Process 
 
