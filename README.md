@@ -5,11 +5,11 @@
 ```
 @inproceedings{dong@2023aaai,
   title={Towards Reliable Item Sampling for Recommendation Evaluation},
-  author={Dong Li, Ruoming Jin, Zhenming Liu, Bin Ren, Jing Gao, Zhi Liu},
+  author={Dong Li and Ruoming Jin and Zhenming Liu and Bin Ren and Jing Gao and Zhi Liu},
   booktitle={Thirty-Seventh {AAAI} Conference on Artificial Intelligence, {AAAI} 2023},
   publisher={{AAAI} Press},
   year={2023},
-}
+}   
 ```
 
 ### 1. Data Process 
