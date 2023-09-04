@@ -1,6 +1,6 @@
 
 
-# AAAI-2023-Code
+# Reference
 
 ```
 @inproceedings{dong@2023aaai,
@@ -9,7 +9,19 @@
   booktitle={Thirty-Seventh {AAAI} Conference on Artificial Intelligence, {AAAI} 2023},
   publisher={{AAAI} Press},
   year={2023},
-}   
+}
+
+@article{jin@2021aaai,
+title={On Estimating Recommendation Evaluation Metrics under Sampling},
+volume={35},
+url={https://ojs.aaai.org/index.php/AAAI/article/view/16537},
+DOI={10.1609/aaai.v35i5.16537},
+number={5},
+journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+author={Jin, Ruoming and Li, Dong and Mudrak, Benjamin and Gao, Jing and Liu, Zhi},
+year={2021}, month={May}, pages={4147-4154} }
+
+
 ```
 
 ### 1. Data Process 
