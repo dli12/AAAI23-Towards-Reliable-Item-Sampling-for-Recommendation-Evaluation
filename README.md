@@ -3,12 +3,32 @@
 # Reference
 
 ```
-@inproceedings{dong@2023aaai,
+@inproceedings{li@2020kdd,
+  author = {Li, Dong and Jin, Ruoming and Gao, Jing and Liu, Zhi},
+  title = {On Sampling Top-K Recommendation Evaluation},
+  year = {2020},
+  isbn = {9781450379984},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3394486.3403262},
+  doi = {10.1145/3394486.3403262},
+  booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages = {2114–2124},
+  numpages = {11},
+  keywords = {recall, top-k, recommender systems, evaluation metric, hit ratio},
+  location = {Virtual Event, CA, USA},
+  series = {KDD '20}
+}
+
+@article{li@2023aaai,
   title={Towards Reliable Item Sampling for Recommendation Evaluation},
-  author={Dong Li and Ruoming Jin and Zhenming Liu and Bin Ren and Jing Gao and Zhi Liu},
-  booktitle={Thirty-Seventh {AAAI} Conference on Artificial Intelligence, {AAAI} 2023},
-  publisher={{AAAI} Press},
-  year={2023},
+  volume={37},
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/25561},
+  DOI={10.1609/aaai.v37i4.25561},
+  number={4},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  author={Li, Dong and Jin, Ruoming and Liu, Zhenming and Ren, Bin and Gao, Jing and Liu, Zhi},
+  year={2023}, month={Jun.}, pages={4409-4416}
 }
 
 @article{jin@2021aaai,
