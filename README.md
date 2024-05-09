@@ -98,7 +98,7 @@ Noting that limited by the file size, we did not put all output files here.
   Assume there is a user defined rank function (after model is trained): 
 
 ```math
-\begin{bmatrix} X\\Y \end{bmatrix}
+r^u_i = f(u, i, I/i)
 ```
 where $u$ is the user id, $i$ is the test item id, $I$ is the total set of items.
 Above equation 
