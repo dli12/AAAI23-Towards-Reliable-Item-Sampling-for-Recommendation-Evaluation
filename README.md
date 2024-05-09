@@ -110,7 +110,7 @@ r^u_i = f(u, i, I_s)
 ```
 $I_s$ is a sample set of items
 
-Sometimes $R^u_i$ is too much resources consuming, we have to rely on sampling-based evaluation. The issue is sampling-based evaluation can not correctly reflect the models' performance as we expected according to [KDD 2020 best paper](https://dl.acm.org/doi/pdf/10.1145/3394486.3403226). Intuitively, $Recall@10$ of a model in sampling-based evaluation can be approximate to $Recall@1000$ in global estimation while the top-1000 is not really we want (ref [ our KDD2020 paper](https://dl.acm.org/doi/abs/10.1145/3394486.3403262)).
+Sometimes $R^u_i$ is too much resources consuming, we have to rely on sampling-based evaluation. The issue is sampling-based evaluation can not correctly reflect the models' performance as we expected according to [KDD 2020 best paper](https://dl.acm.org/doi/pdf/10.1145/3394486.3403226). Intuitively, $Recall@10$ of a model in sampling-based evaluation can be approximate to $Recall@1000$ in global estimation while the top-1000 is not really what we want (ref [ our KDD2020 paper](https://dl.acm.org/doi/abs/10.1145/3394486.3403262)).
 
-
+Adaptive sampling can help rectify the issue with given only sapling rank $r^u_i$ to estimate its global $R^u_i$ and compute metric effectively.
 ### 3. How to use
