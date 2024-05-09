@@ -84,3 +84,25 @@ The output file is stored in *./table/results* folder.
 
 Noting that limited by the file size, we did not put all output files here. 
 
+# Adaptive Sampling Estimation
+
+### 1. When to use
+
+* Test/evaluation stage, not training stage. Adaptive sampling estimation is the same as a normal evaluation method that compute metrics for different models and evaluate/compare their performance
+
+* When there are too many items (such as over millions), computing a specific rank of an item among all items are significant inefficient.
+
+
+### 2. Why use
+* Global
+  Assume there is a user defined rank function (after model is trained): 
+
+```equaiton
+r^u_i = f(u, i, I\i)
+```
+where $u$ is the user id, $i$ is the test item id, $I$ is the total set of items.
+Above equation 
+
+
+
+### 3. How to use
