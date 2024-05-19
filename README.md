@@ -116,5 +116,7 @@ Adaptive sampling can help rectify the issue with given only sapling rank $r^u_i
 ### 3. How to use
 
 3.1 use 'adaptive/adaptive_sampling.py' to obtain the sample rank
+
 3.2 use 'adaptive/adaptive_estimator.py' to estimate the global rank (distribution)
+
 As long as PR is obtained from 3.2, one can use 'NDCG_K' from 'estimator.utils.py' to approximate global NDCG metric, etc.
