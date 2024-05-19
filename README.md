@@ -84,3 +84,37 @@ The output file is stored in *./table/results* folder.
 
 Noting that limited by the file size, we did not put all output files here. 
 
+# Adaptive Sampling Estimation
+
+### 1. When to use
+
+* Test/evaluation stage, not training stage. Adaptive sampling estimation is the same as a normal evaluation method that compute metrics for different models and evaluate/compare their performance
+
+* When there are too many items (such as over millions), computing a specific rank of an item among all items are significant inefficient.
+
+
+### 2. Why use
+* Global Evaluation
+
+  Assume there is a user defined rank function (after model is trained): 
+
+```math
+R^u_i = f(u, i, I/i)
+```
+where $u$ is the user id, $i$ is the test item id, $I$ is the total set of items. $R^u_i$ is the final rank.
+
+* Sampling Evaluation
+
+```math
+r^u_i = f(u, i, I_s)
+```
+$I_s$ is a sample set of items
+
+Sometimes $R^u_i$ is too much resources consuming, we have to rely on sampling-based evaluation. The issue is sampling-based evaluation can not correctly reflect the models' performance as we expected according to [KDD 2020 best paper](https://dl.acm.org/doi/pdf/10.1145/3394486.3403226). Intuitively, $Recall@10$ of a model in sampling-based evaluation can be approximate to $Recall@1000$ in global estimation while the top-1000 is not really what we want (ref [ our KDD2020 paper](https://dl.acm.org/doi/abs/10.1145/3394486.3403262)).
+
+Adaptive sampling can help rectify the issue with given only sapling rank $r^u_i$ to estimate its global $R^u_i$ and compute metric effectively.
+### 3. How to use
+
+3.1 use 'adaptive/adaptive_sampling.py' to obtain the sample rank
+3.2 use 'adaptive/adaptive_estimator.py' to estimate the global rank (distribution)
+As long as PR is obtained from 3.2, one can use 'NDCG_K' from 'estimator.utils.py' to approximate global NDCG metric, etc.
